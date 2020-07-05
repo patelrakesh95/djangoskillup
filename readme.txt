@@ -13,8 +13,8 @@
   python
   import django
   print(django.get_version())
-8)write your first django application
-  django-admin startproject myskillup
+8)write your first django project
+  django-admin startproject {project name}
 9)Run Development Server
-  python myskillup/manage.py runserver
+  python {project name}/manage.py runserver
 10)open the link
