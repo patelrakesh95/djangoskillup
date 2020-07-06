@@ -1,0 +1,18 @@
+<doctype html>
+<head>
+<title>{{title}}</title>
+</head>
+<body>
+<h1>Welcome {{name}}!</h1>
+<form action="{% url 'sampleapp/usermsg' %}" method='POST'>
+{% csrf_token %} 
+<div class="form-group">
+  <label for="name">Name : </label>
+  <input type="text"
+    class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="Enter Name">
+  <small id="helpId" class="form-text text-muted">Enter yout firstname and lastname.</small>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
