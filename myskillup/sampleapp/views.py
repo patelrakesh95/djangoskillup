@@ -4,3 +4,6 @@ from  django.http import request,HttpResponse
 
 def index(request):
     return HttpResponse("Hello World!")
+
+def renderIndex(request):
+    return render(request,'sampleapp/index.html',None)
